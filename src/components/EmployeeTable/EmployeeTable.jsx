@@ -5,7 +5,6 @@ import { columns } from "../../datas/datas";
 
 export function Table() {
   const data = useSelector((state) => state.employeeDatas);
-  console.log(data)
 
   return (
     <div className="container">

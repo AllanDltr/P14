@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addEmployee } from "../../features/store";
 import { DateInput } from "../DateInput/DateInput";
 import { SelectInput } from "../Select/SelectInput";
-import { Modal } from "../Modale/Modale";
+import { Modal,  } from "../Modale/Modale";
 import {states, departments} from "../../datas/datas"
 import {TextInput} from "../TextInput/TextInput";
 import "./Form.css";
@@ -14,9 +14,9 @@ export function Form() {
   const dispatch = useDispatch();
   const stateData = useSelector((state) => state.employeeDatas);
 
-  function handleClick() {
-    setOpenModal(!openModal);
-  }
+    function handleClick() { // Fonction pour ouvrir la modale
+      setOpenModal(true);
+    };
 
   async function handleOnSubmit(e) { // Fonction de submit
     e.preventDefault(); // Empêche le rechargement de la page
@@ -138,9 +138,8 @@ export function Form() {
       { openModal &&
       <Modal
       title="Employee Created"
-      text="Your employee has been created"
       onClick={handleClick}
-      isOpen={openModal}
+      onClose={() => setOpenModal(false)}
       /> }
       </form>
     </div>
