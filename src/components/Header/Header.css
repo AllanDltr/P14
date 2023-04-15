@@ -1,0 +1,19 @@
+.header {
+    height: 150px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:20px;
+    padding-right: 60px;
+}
+
+.logo {
+    height:150px;
+}
+
+.navLink {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}

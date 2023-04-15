@@ -1,0 +1,20 @@
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal__OpenBtn {
+    margin-top:20px;
+    width: 234px;
+    height: 56px;
+    border: none;
+    border-radius: 6px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+  }
+
+.create__employee__content {
+  text-align: center;
+}
